@@ -2,7 +2,8 @@
 font-family: 'Playfair Display', serif; */
 
 body {
-  background: url("bkg-cat.jpg") no-repeat center center fixed;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e3628613-834a-416f-b562-28e2e9e908c3/df3y8b4-1329b567-be8b-4764-be66-bd379811c466.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UzNjI4NjEzLTgzNGEtNDE2Zi1iNTYyLTI4ZTJlOWU5MDhjM1wvZGYzeThiNC0xMzI5YjU2Ny1iZThiLTQ3NjQtYmU2Ni1iZDM3OTgxMWM0NjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ykhsm_i4i77oLouYepQrxuhgHe1Tg7RgF5_CeI3ifsI")
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
