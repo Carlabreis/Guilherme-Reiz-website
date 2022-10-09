@@ -1,0 +1,43 @@
+body {
+  background: url("bkg-cat.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+main {
+  margin: 20px;
+}
+
+.intro {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 500px;
+}
+
+.contact-links {
+  list-style: none;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100px;
+}
+
+.grid > img {
+  width: 200px;
+  height: 200px;
+} */
