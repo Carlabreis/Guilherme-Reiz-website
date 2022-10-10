@@ -116,9 +116,9 @@ a {
 # Header
 --------------------------------------------------------------*/
 
-/* .navbar {
+.navbar {
   background-color: rgb(80, 72, 62);
-} */
+}
 
 .nav-link {
   color: white;
@@ -131,6 +131,13 @@ a {
 /* .navbar > span {
   color: white;
 } */
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
 
 
 /*--------------------------------------------------------------
