@@ -45,6 +45,26 @@ img {
   padding: 10px;
 }
 
+/* img {
+  width: 100%;
+  height: 100%;
+}
+
+.portrait {
+  height: 380px;
+  width: 120px;
+}
+
+.landscape {
+  height: 120px;
+  width: 380px;
+}
+
+.square {
+  height: 300px;
+  width: 300px;
+} */
+
 a {
   text-decoration: none;
   color: white;
