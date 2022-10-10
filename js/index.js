@@ -5,4 +5,10 @@ function copy(that) {
   inp.select();
   document.execCommand("copy", false);
   inp.remove();
+  alert("Email Copied");
 }
+
+// function alertCopy() {
+// }
+//
+// document.getElementById("copy-email").addEventListener("mouseover", alertCopy);
