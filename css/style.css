@@ -2,13 +2,14 @@
 font-family: 'Playfair Display', serif; */
 
 body {
-  background: url("css/images/Moutain-guy-Done.png") no-repeat center center fixed;
+  background-image: src("images/Moutain-guy-Done.png");
+  background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  /* color: white; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -42,10 +43,6 @@ img {
 .gallery-img {
   height: 300px;
   padding: 10px;
-}
-
-#contact {
-  text-align: center;
 }
 
 /* img {
@@ -96,6 +93,7 @@ a {
 
 .contact-links {
   list-style: none;
+  text-align: center;
 }
 
 .profile-picture {
