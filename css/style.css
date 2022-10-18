@@ -2,13 +2,13 @@
 font-family: 'Playfair Display', serif; */
 
 body {
-  background: url("Moutain-guy-Done.png") no-repeat center center fixed;
+  background: url("Moutain-guy-Done.png") no-repeat center 25% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  /* color: white; */
+  color: white;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -23,6 +23,7 @@ h1 {
 }
 
 h2 {
+  font-size: 2em;
   font-weight: bold;
   padding-bottom: 20px;
   display: flex;
@@ -32,6 +33,11 @@ h2 {
 h4 {
   font-family: "Playfair Display", serif;
   text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  /* font-weight: bold; */
 }
 
 img {
@@ -76,7 +82,7 @@ a {
 .email:hover + .hide {
   font-size: 0.8em;
   display: block;
-  color: purple;
+  color: green;
 }
 
 .container {
@@ -103,20 +109,45 @@ a {
   display: inline-block;
 }
 
-.navbar {
-  background-color: rgb(85, 61, 127);
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+/* .navbar {
+  background-color: rgb(80, 72, 62);
+} */
+
+.nav-link {
+  color: white;
 }
+
+.navbar-toggler {
+  color: #fff;
+}
+
+/* .navbar > span {
+  color: white;
+} */
+
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
   background: #fff;
-  color: #45505b;
+  color: black;
   /* font-size: 14px; */
   text-align: center;
   padding: 10px 0;
 }
+
+.container-footer {
+  padding: 10px 0;
+}
+
 /* #footer h3 {
   font-size: 36px;
   font-weight: 700;
@@ -159,4 +190,8 @@ a {
 }
 #footer .credits {
   font-size: 0.7em;
+}
+
+#footer a {
+  color: green;
 }
