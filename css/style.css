@@ -137,10 +137,6 @@ a {
   color: white;
 }
 
-a.active {
-  background: green;
-}
-
 .hide {
   display: none;
 }
@@ -225,6 +221,11 @@ a.active {
 
 .navbar-toggler {
   color: #fff;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
 }
 
 /* .navbar > span {
