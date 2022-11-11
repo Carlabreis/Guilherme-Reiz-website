@@ -28,49 +28,54 @@
 
     <nav class="autohide navbar navbar-expand-md sticky-top">
       <div class="container-fluid">
-        <span class="navbar-brand">GuilhermeReiz</span>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <!-- <span class="navbar-brand">GuilhermeReiz</span> -->
+        <div class="langWrap">
+          <a href="#" language="english" class="active">EN</a>
+          <a href="#" language="portuguese">PT</a>
+          <a href="#" language="german">DE</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>      
     </nav>
 
     <!-- Main -->
-    <main>
+    <main class="content">
       <!-- Intro -->
 
       <div class="container intro" id="intro">
         <div>
           <h1>Guilherme Reiz</h1>
-          <h4>Illustration</h4>
+          <h4 class="subtitle">Illustration</h4>
         </div>
       </div>
 
       <!-- Gallery -->
 
       <div class="container" id="gallery">
-        <h2>Gallery</h2>
+        <h2 class="galleryTitle">Gallery</h2>
         <hr />
         <div class="row">
           <div class="col-md-6 gallery-img">
@@ -176,7 +181,7 @@
       <!-- About -->
 
       <div class="container" id="about">
-        <h2>About</h2>
+        <h2 class="aboutTitle">About</h2>
         <hr />
         <div class="row">
           <div class="col-lg-3">
@@ -187,7 +192,7 @@
             />
           </div>
           <div class="col-lg-9 pt-4 pt-lg-0 content">
-            <p>
+            <p class="aboutDesc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -203,7 +208,7 @@
       <!-- Contact -->
 
       <div class="container" id="contact">
-        <h2>Contact</h2>
+        <h2 class="contactTitle">Contact</h2>
         <hr />
         <div class="">
           <ul class="contact-links">
@@ -236,7 +241,7 @@
               <a onclick="copy(this)"> guireiz.gr@gmail.com</a>
             </li>
             <li class="hide">
-              <span>Click to Copy <i class="fa-solid fa-arrow-up"></i></span>
+              <span class="clickToCopy">Click to Copy <i class="fa-solid fa-arrow-up"></i></span>
             </li>
           </ul>
         </div>
@@ -290,7 +295,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
-    ></script>
+    >
+    </script>
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -75,6 +75,10 @@ a {
   color: white;
 }
 
+a.active {
+  background: #f21313;
+}
+
 .hide {
   display: none;
 }

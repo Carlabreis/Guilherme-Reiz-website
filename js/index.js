@@ -33,3 +33,58 @@ function copy(that) {
   inp.remove();
   alert("Email Copied");
 }
+
+////////// language selector ////////////
+
+const langEl = document.querySelector('.langWrap');
+const link = document.querySelectorAll('a');
+const subtitleEl = document.querySelector('.subtitle');
+const galleryEl = document.querySelector('.galleryTitle');
+const aboutEl = document.querySelector('.aboutTitle');
+const aboutDescEl = document.querySelector('.aboutDesc');
+const contactEl = document.querySelector('.contactTitle');
+const clickEl = document.querySelector('.clickToCopy');
+
+link.forEach(el => {
+  el.addEventListener('click', () => {
+    langEl.querySelector('.active').classList.remove('active');
+    el.classList.add('active');
+
+    const attr = el.getAttribute('language');
+
+    subtitleEl.textContent = data[attr].subtitle;
+    galleryEl.textContent = data[attr].galleryTitle;
+    aboutEl.textContent = data[attr].aboutTitle;
+    aboutDescEl.textContent = data[attr].aboutDesc;
+    contactEl.textContent = data[attr].contactTitle;
+    clickEl.textContent = data[attr].clickToCopy;
+
+  });
+});
+
+var data = {
+  "english": {
+    "subtitle": "Illustrator",
+    "galleryTitle": "Gallery",
+    "aboutTitle": "About",
+    "aboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "contactTitle": "Contact",
+    "clickToCopy": "Click to copy"
+  },
+  "portuguese": {
+    "subtitle": "Ilustrador",
+    "galleryTitle": "Galeria",
+    "aboutTitle": "Sobre Mim",
+    "aboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "contactTitle": "Contato",
+    "clickToCopy": "Clique para copiar"
+  },
+  "german": {
+    "subtitle": "Illustrator",
+    "galleryTitle": "Galerie",
+    "aboutTitle": "Über mich",
+    "aboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "contactTitle": "Kontakt",
+    "clickToCopy": "Zum Kopieren klicken"
+  }
+};
