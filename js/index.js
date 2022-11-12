@@ -37,7 +37,7 @@ function copy(that) {
 ////////// language selector ////////////
 
 const langEl = document.querySelector('.langWrap');
-const link = document.querySelectorAll('a');
+const link = document.querySelectorAll('.lang');
 const subtitleEl = document.querySelector('.subtitle');
 const galleryEl = document.querySelector('.galleryTitle');
 const aboutEl = document.querySelector('.aboutTitle');
