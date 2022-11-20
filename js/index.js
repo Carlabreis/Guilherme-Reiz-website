@@ -38,6 +38,9 @@ function copy(that) {
 
 const langEl = document.querySelector('.langWrap');
 const link = document.querySelectorAll('.lang');
+const galleryNavE1 = document.querySelector('.galleryNav');
+const aboutNavE1 = document.querySelector('.aboutNav');
+const contactNavE1 = document.querySelector('.contactNav');
 const subtitleEl = document.querySelector('.subtitle');
 const galleryEl = document.querySelector('.galleryTitle');
 const aboutEl = document.querySelector('.aboutTitle');
@@ -52,6 +55,9 @@ link.forEach(el => {
 
     const attr = el.getAttribute('language');
 
+    galleryNavE1.textContent = data[attr].galleryNav;
+    aboutNavE1.textContent = data[attr].aboutNav;
+    contactNavE1.textContent = data[attr].contactNav;
     subtitleEl.textContent = data[attr].subtitle;
     galleryEl.textContent = data[attr].galleryTitle;
     aboutEl.textContent = data[attr].aboutTitle;
@@ -64,28 +70,48 @@ link.forEach(el => {
 
 var data = {
   "english": {
+    "galleryNav": "Gallery",
+    "aboutNav": "About",
+    "contactNav": "Contact",
     "subtitle": "Illustrator",
     "galleryTitle": "Gallery",
     "aboutTitle": "About",
-    "aboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "aboutDesc": "Hello, my name is Guilherme, I'm Brazilian and live in Brazil. Currently, I work with digital illustration for editorial and advertising! Since I was little, I've been connected to art, I've always loved painting, drawing, music, crafts, etc. I remember in high school, I was not so good with the required subjects, and my notebooks were full of drawings, there were few things written, but lots of drawings. Nowadays, I usually say that there would be no other job in the world that would make me feel happy if not illustration. I am completely in love with what I do! I am constantly improving my techniques and skills, to deliver the best to my clients and partners. Hope we can work together soon!",
     "contactTitle": "Contact",
     "clickToCopy": "Click to copy"
   },
   "portuguese": {
+    "galleryNav": "Galeria",
+    "aboutNav": "Sobre Mim",
+    "contactNav": "Contato",
     "subtitle": "Ilustrador",
     "galleryTitle": "Galeria",
     "aboutTitle": "Sobre Mim",
-    "aboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "aboutDesc": "Olá, meu nome é Guilherme, sou brasileiro e moro no Brasil. Atualmente trabalho com ilustração digital para editorial e publicidade! Desde pequeno sempre fui ligado a arte, sempre adorei pintura, desenho, música, artesanato, etc. Lembro que no colégio eu não era tão bom com as matérias exigidas, e meus cadernos eram cheios de desenhos, tinha pouca coisa escrita, mas muitos desenhos. Hoje em dia, costumo dizer que não haveria outro trabalho no mundo que me fizesse sentir feliz senão a ilustração. Sou completamente apaixonado pelo que faço! Estou sempre aprimorando minhas técnicas e habilidades, para entregar o melhor aos meus clientes e parceiros. Espero que possamos trabalhar juntos em breve!",
     "contactTitle": "Contato",
     "clickToCopy": "Clique para copiar"
   },
   "german": {
+    "galleryNav": "Galerie",
+    "aboutNav": "Über mich",
+    "contactNav": "Kontakt",
     "subtitle": "Illustrator",
     "galleryTitle": "Galerie",
     "aboutTitle": "Über mich",
-    "aboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "aboutDesc": "Hallo, mein Name ist Guilherme, ich bin Brasilianer und lebe in Brasilien. Derzeit arbeite ich mit digitaler Illustration für Redaktion und Werbung! Seit ich klein bin, bin ich der Kunst verbunden, ich habe schon immer gerne gemalt, gezeichnet, musiziert, gebastelt usw. Ich erinnere mich, dass ich in der High School nicht so gut in den erforderlichen Fächern war und meine Hefte voll waren Zeichnungen, es gab wenig Geschriebenes, aber viele Zeichnungen. Heutzutage sage ich normalerweise, dass es keinen anderen Job auf der Welt geben würde, der mich glücklich machen würde, wenn nicht der Illustration. Ich bin total verliebt in das, was ich tue! Ich verbessere ständig meine Techniken und Fähigkeiten, um meinen Kunden und Partnern die beste Qualität zu bieten. Hoffentlich können wir bald zusammenarbeiten!",
     "contactTitle": "Kontakt",
     "clickToCopy": "Zum Kopieren klicken"
+  },
+  "spanish": {
+    "galleryNav": "Galería",
+    "aboutNav": "Sobre Mí",
+    "contactNav": "Contacto",
+    "subtitle": "Ilustrador",
+    "galleryTitle": "Galería",
+    "aboutTitle": "Sobre Mí",
+    "aboutDesc": "Hola, mi nombre es Guilherme, soy brasileño y vivo en Brasil. Actualmente trabajo con ilustración digital para editorial y publicidad! Desde pequeño he estado ligado al arte, siempre me ha gustado la pintura, el dibujo, la música, las manualidades, etc. Recuerdo que en la secundaria no se me daban muy bien las materias requeridas y mis cuadernos estaban llenos de dibujos, había pocas cosas escritas, pero muchos dibujos. Hoy en día suelo decir que no habría otro trabajo en el mundo que me hiciera sentir feliz si no fuera la ilustración. Soy completamente enamorado de lo que hago! Estoy constantemente mejorando mis técnicas y habilidades, para brindar la mejor calidad a mis clientes y socios. ¡Espero que podamos trabajar juntos pronto!",
+    "contactTitle": "Contacto",
+    "clickToCopy": "Haga clic para copiar"
   }
 };
 
