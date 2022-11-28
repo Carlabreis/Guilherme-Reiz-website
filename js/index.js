@@ -174,7 +174,7 @@ allImages.forEach(function(btn, index){
 })
 
 function currentImageDisplay(position){
-    imageBox.style.background = `url(css/img${currentImageIdx}.png) center/cover no-repeat`;
+    imageBox.style.background = `url(css/img${currentImageIdx}.png) center/contain no-repeat`;
 }
 
 prevBtn.addEventListener('click', function(){
