@@ -105,12 +105,23 @@ a {
   text-align: center;
 }
 
-.profile-picture {
+.about-img {
+  float: left;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: inline-block;
+  margin-right: 10px;
+}
+
+.profile-picture {
+  border-radius: 50%;  
+  /* overflow: hidden; */
+  /* display: inline-block; */
+}
+
+.about-body {
+  text-align: justify;
+  float:none;
+  margin-top: 10px;
 }
 
 .langWrap a {
